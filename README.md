@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Task & Team Management Dashboard
+
+A modern, responsive dashboard for managing tasks and team members — built as a Frontend Developer Internship Assignment.
+
+## Tech Stack
+
+- **Next.js 16** (App Router)
+- **React 19** with TypeScript 5
+- **Tailwind CSS v4**
+- **Zod** for form validation
+- **Context API** for global state
+- **Lucide React** for icons
+- **date-fns** for date formatting
+
+## Features
+
+- **Authentication** — Login and Forgot Password pages with full form validation
+- **Dashboard** — Stat cards (Total Tasks, Completed, Pending, Team Members) + activity feed
+- **Task Management** — Create, edit, delete, search, and filter tasks by status/priority/assignee
+- **Team Members** — View, add, and remove team members with task completion progress
+- **Dark Mode** — Toggle between light and dark themes, persisted across sessions
+- **Responsive** — Works on mobile, tablet, and desktop
+- **Animations** — Page fade-in, card stagger entrance, modal scale-in, toast slide-in
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+- npm
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone <your-repo-url>
+cd task-team-dashboard
+
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Demo Credentials
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+Email:    alex@demo.com
+Password: password123
+```
 
-## Learn More
+### Build for Production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+├── app/
+│   ├── (auth)/          # Login, Forgot Password pages
+│   ├── (dashboard)/     # Dashboard, Tasks, Team pages
+│   └── layout.tsx       # Root layout with all providers
+├── components/
+│   ├── ui/              # Reusable primitives (Button, Input, Modal, etc.)
+│   ├── layout/          # Sidebar, Topbar, PageHeader
+│   ├── dashboard/       # StatCard, ActivityFeed
+│   ├── tasks/           # TaskCard, TaskList, TaskFilters, TaskFormModal
+│   └── team/            # MemberCard, MemberList, MemberFormModal
+├── context/             # ThemeContext, AppContext, TaskContext, TeamContext
+├── hooks/               # useLocalStorage
+├── lib/                 # utils.ts, validators.ts (Zod schemas)
+├── data/                # mockUser, mockTasks, mockTeam
+└── types/               # All TypeScript interfaces
+```
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is ready to deploy on [Vercel](https://vercel.com) with zero configuration.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
