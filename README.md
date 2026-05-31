@@ -2,13 +2,11 @@
 
 A modern, fully responsive dashboard for managing tasks and team members, built as a Frontend Developer Internship Assignment.
 
-![Dashboard Preview](./screenshots/dashboard-dark.png)
-
 ---
 
 ## Live Demo
 
-🔗 [View Live on Vercel](https://frontend-developer-internship-assig.vercel.app/login)
+🔗 **[View Live on Vercel](https://frontend-developer-internship-assig.vercel.app/login)**
 
 > **Demo credentials**
 > ```
@@ -20,20 +18,20 @@ A modern, fully responsive dashboard for managing tasks and team members, built 
 
 ## Screenshots
 
-### Dashboard
-![Dashboard](./screenshots/dashboard-dark.png)
+### Dashboard (Dark Mode)
+![Dashboard Dark](./screenshots/dashboard-dark.png)
 Stat cards showing Total Tasks, Completed, Pending, and Overdue counts — with a live activity feed and team member count.
 
-### Task Management
-![Tasks](./screenshots/tasks-light.png)
+### Tasks Page (Light Mode)
+![Tasks Light](./screenshots/tasks-light.png)
 Full task list with search, multi-filter (status, priority, assignee), and card grid layout.
 
 ### New Task Modal
-![New Task Modal](./screenshots/task-modal-dark.png)
+![Task Modal](./screenshots/task-modal-dark.png)
 Create or edit tasks with full Zod validation — title, description, status, priority, assignee, and due date.
 
-### Team Members
-![Team](./screenshots/team-light.png)
+### Team Members Page
+![Team Light](./screenshots/team-light.png)
 Team member cards showing role, department, email, and task completion progress bar.
 
 ---
@@ -77,8 +75,8 @@ Team member cards showing role, department, email, and task completion progress 
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/task-team-dashboard.git
-cd task-team-dashboard
+git clone https://github.com/Udaymore741/Frontend-Developer-Internship-Assignment.git
+cd Frontend-Developer-Internship-Assignment/task-team-dashboard
 
 # Install dependencies
 npm install
@@ -125,7 +123,7 @@ src/
 
 Deployed on [Vercel](https://vercel.com). Every push to `main` triggers an automatic redeployment.
 
-To deploy your own:
+To deploy your own fork:
 1. Push this repo to GitHub
 2. Go to [vercel.com/new](https://vercel.com/new) → Import the repo
 3. Set **Root Directory** to `task-team-dashboard`
