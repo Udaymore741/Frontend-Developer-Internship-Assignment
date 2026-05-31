@@ -8,7 +8,7 @@ A modern, fully responsive dashboard for managing tasks and team members, built 
 
 ## Live Demo
 
-🔗 [View Live on Vercel]([https://task-team-dashboard.vercel.app](https://frontend-developer-internship-assig.vercel.app/login)) <!-- replace with your actual URL -->
+🔗 [View Live on Vercel](https://frontend-developer-internship-assig.vercel.app/login)
 
 > **Demo credentials**
 > ```
