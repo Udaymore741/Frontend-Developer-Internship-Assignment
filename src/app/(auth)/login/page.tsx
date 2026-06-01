@@ -88,8 +88,8 @@ export default function LoginPage() {
       </form>
 
       <p className="mt-6 text-center text-xs text-zinc-400">
-        Demo credentials: <span className="font-mono">alex@demo.com</span> /{' '}
-        <span className="font-mono">password123</span>
+        Demo credentials: <span className="font-mono">admin@infusyx.com</span> /{' '}
+        <span className="font-mono">infusyx@2026</span>
       </p>
     </Card>
   );

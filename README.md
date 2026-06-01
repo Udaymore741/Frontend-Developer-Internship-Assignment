@@ -10,8 +10,8 @@ A modern, fully responsive dashboard for managing tasks and team members, built 
 
 > **Demo credentials**
 > ```
-> Email:    alex@demo.com
-> Password: password123
+> Email:    admin@infusyx.com
+> Password: infusyx@2026
 > ```
 
 ---
